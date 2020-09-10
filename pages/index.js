@@ -28,7 +28,7 @@ export default function Home() {
           }}
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1JQQDB9zNSj8vESgC4TBsHQ777q8x4F1h/view?usp=sharing"
+              "https://drive.google.com/file/d/1-5_DrV0WHSe4LTvr0OIRqxXEhb86RfX4/view?usp=sharing"
             );
           }}
         >
@@ -50,7 +50,7 @@ export default function Home() {
             cursor: "pointer",
           }}
           onClick={() => {
-            window.open("https://brownfox.co");
+            window.open("https://clubpickleball.co");
           }}
         >
           <img style={{ width: 35.5, height: 30 }} src="/assets/web.png" />
