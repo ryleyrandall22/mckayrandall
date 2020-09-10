@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ryley Randall</title>
+        <title>Mckay Randall</title>
         <link rel="icon" href="/logo.png" />
       </Head>
       <div id={styles.header}>
@@ -59,7 +59,19 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <h1 id={styles.nameBox}>Welcome to RyleyRandall.com</h1>
+      <h1 style={{ margin: 0 }} id={styles.nameBox}>
+        Welcome to MckayRandall.com
+      </h1>
+      <h3
+        style={{
+          margin: 0,
+          fontSize: 28,
+          color: "white",
+          fontFamily: `"VT323", monospace`,
+        }}
+      >
+        Home of Mckay Randall, J.D.
+      </h3>
 
       <div id={styles.dock}>
         <div onClick={() => setShow(true)} id={styles.startbutton}>

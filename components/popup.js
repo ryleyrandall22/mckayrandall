@@ -20,7 +20,7 @@ export default function Popup({ onClose }) {
       >
         <div className="handle">
           <p style={{ flexGrow: 1 }} className="headFont">
-            Ryley Randall
+            Mckay Randall
           </p>
           <div
             className="button"
@@ -50,7 +50,7 @@ export default function Popup({ onClose }) {
           }}
         >
           <h4 className="text">E-Mail</h4>
-          <p className="text">ryley.randall@gmail.com</p>
+          <p className="text">marandall13@gmail.com.com</p>
           <h4 style={{ marginTop: 20 }} className="text">
             Location
           </h4>
@@ -58,7 +58,7 @@ export default function Popup({ onClose }) {
           <h4 style={{ marginTop: 20 }} className="text">
             Intrests
           </h4>
-          <p className="text">No-code, Pickleball, West Africa</p>
+          <p className="text">Pickleball, College Football, Cars</p>
         </div>
       </div>
     </Draggable>
