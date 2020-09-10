@@ -38,6 +38,7 @@ h3.navItem {
 #nameBox {
   padding: 8px;
   border-radius: 5px;
+  font-family: "VT323", monospace;
   transition: background-color 200ms, color 200ms;
 }
 

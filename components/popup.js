@@ -7,9 +7,9 @@ export default function Popup({ onClose }) {
       <div
         style={{
           width: 300,
-          height: 300,
-          position: "fixed",
 
+          position: "fixed",
+          top: 30,
           backgroundColor: "#c0c0c0",
           borderRight: "2px solid #333",
           borderTop: "2px solid #333",
@@ -23,14 +23,11 @@ export default function Popup({ onClose }) {
             Ryley Randall
           </p>
           <div
+            className="button"
             style={{
               width: 18,
               height: 18,
-              backgroundColor: "#c0c0c0",
-              borderRight: "2px solid #333",
-              borderTop: "2px solid #333",
-              borderLeft: "2px solid #f2f2f2",
-              borderBottom: "2px solid #f2f2f2",
+
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -43,7 +40,26 @@ export default function Popup({ onClose }) {
             </p>
           </div>
         </div>
-        <div>This readme is really dragging on...</div>
+        <div
+          style={{
+            width: "100%",
+            backgroundColor: "white",
+            padding: 4,
+            marginTop: 6,
+            border: "1px dotted",
+          }}
+        >
+          <h4 className="text">E-Mail</h4>
+          <p className="text">ryley.randall@gmail.com</p>
+          <h4 style={{ marginTop: 20 }} className="text">
+            Location
+          </h4>
+          <p className="text">Mesa, Arizona</p>
+          <h4 style={{ marginTop: 20 }} className="text">
+            Intrests
+          </h4>
+          <p className="text">No-code, Pickleball, West Africa</p>
+        </div>
       </div>
     </Draggable>
   );

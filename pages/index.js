@@ -59,8 +59,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <h1 id={styles.nameBox}>Ryley Randall</h1>
-      <h3>(sup)</h3>
+      <h1 id={styles.nameBox}>Welcome to RyleyRandall.com</h1>
+
       <div id={styles.dock}>
         <div onClick={() => setShow(true)} id={styles.startbutton}>
           <img style={{ width: 20, height: 20 }} src={"/assets/logo.png"} />

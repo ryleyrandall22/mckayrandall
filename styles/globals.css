@@ -26,6 +26,11 @@ a {
   align-items: center;
   background-color: #0b009c;
   padding: 4px;
+  cursor: grab;
+}
+
+.handle:active {
+  cursor: grabbing;
 }
 
 .headFont {
@@ -34,4 +39,24 @@ a {
   font-size: 16px;
   margin: 0px;
   color: white;
+}
+
+.text {
+  font-family: "VT323", monospace;
+  margin: 0px;
+}
+
+.button {
+  background-color: #c0c0c0;
+  border-right: 2px solid #333;
+  border-top: 2px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
+  border-bottom: 2px solid #333;
+}
+.button:hover {
+  background-color: #c0c0c0;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #fff;
 }
