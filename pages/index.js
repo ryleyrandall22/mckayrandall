@@ -97,9 +97,9 @@ export default function Home() {
             setBlaster(true);
           }}
         >
-          <img style={{ width: 35.5, height: 30 }} src="/assets/blaster.png" />
+          <img style={{ width: 35.5, height: 30 }} src="/assets/pong.png" />
           <p style={{ marginTop: 6 }} className={styles.bit}>
-            Blaster
+            3D-PONG
           </p>
         </div>
       </div>

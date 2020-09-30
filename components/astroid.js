@@ -6,8 +6,8 @@ export default function Blaster({ onClose }) {
     <Draggable handle=".handle" defaultPosition={{ x: 0, y: 0 }} scale={1}>
       <div
         style={{
-          width: 522,
-          height: 430,
+          width: 550,
+          height: 454,
           position: "fixed",
           top: 30,
           backgroundColor: "#c0c0c0",
@@ -20,7 +20,7 @@ export default function Blaster({ onClose }) {
       >
         <div className="handle">
           <p style={{ flexGrow: 1 }} className="headFont">
-            Astroid Blaster
+            3D-PONG
           </p>
           <div
             className="button"
@@ -42,8 +42,8 @@ export default function Blaster({ onClose }) {
         </div>
         <div
           style={{
-            width: 512,
-            height: 384,
+            width: 540,
+            height: 410,
             backgroundColor: "white",
 
             marginTop: 6,
@@ -51,12 +51,12 @@ export default function Blaster({ onClose }) {
           }}
         >
           <iframe
-            src="https://www.embed.com/app/arcade/asteroids.html"
+            src="https://www.kiwijs.org/wp-content/uploads/games/4758/absolutionvelocity/index.html"
             style={{
-              width: 1280,
-              height: 960,
-              transform: "scale(.4)",
-              transformOrigin: "0 0",
+              width: 540,
+              height: 410,
+              //transform: "scale(.4)",
+              //transformOrigin: "0 0",
             }}
             scrolling="no"
             frameBorder="0"
