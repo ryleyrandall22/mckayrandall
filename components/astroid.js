@@ -1,13 +1,13 @@
 import React from "react";
 import Draggable from "react-draggable";
 
-export default function Popup({ onClose }) {
+export default function Blaster({ onClose }) {
   return (
     <Draggable handle=".handle" defaultPosition={{ x: 0, y: 0 }} scale={1}>
       <div
         style={{
-          width: 300,
-
+          width: 522,
+          height: 430,
           position: "fixed",
           top: 30,
           backgroundColor: "#c0c0c0",
@@ -20,7 +20,7 @@ export default function Popup({ onClose }) {
       >
         <div className="handle">
           <p style={{ flexGrow: 1 }} className="headFont">
-            Mckay Randall
+            Astroid Blaster
           </p>
           <div
             className="button"
@@ -42,23 +42,25 @@ export default function Popup({ onClose }) {
         </div>
         <div
           style={{
-            width: "100%",
+            width: 512,
+            height: 384,
             backgroundColor: "white",
-            padding: 4,
+
             marginTop: 6,
             border: "1px dotted",
           }}
         >
-          <h4 className="text">E-Mail</h4>
-          <p className="text">mckayarandall@gmail.com</p>
-          <h4 style={{ marginTop: 20 }} className="text">
-            Location
-          </h4>
-          <p className="text">Mesa, Arizona</p>
-          <h4 style={{ marginTop: 20 }} className="text">
-            Intrests
-          </h4>
-          <p className="text">Pickleball, College Football, Cars</p>
+          <iframe
+            src="https://www.embed.com/app/arcade/asteroids.html"
+            style={{
+              width: 1280,
+              height: 960,
+              transform: "scale(.4)",
+              transformOrigin: "0 0",
+            }}
+            scrolling="no"
+            frameBorder="0"
+          ></iframe>
         </div>
       </div>
     </Draggable>

@@ -3,9 +3,11 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import Popup from "../components/popup";
+import Blaster from "../components/astroid";
 
 export default function Home() {
   const [show, setShow] = useState(false);
+  const [blaster, setBlaster] = useState(false);
   const router = useRouter();
   return (
     <div className={styles.container}>
@@ -50,12 +52,54 @@ export default function Home() {
             cursor: "pointer",
           }}
           onClick={() => {
-            window.open("https://clubpickleball.co");
+            window.open("https://playpickleball.club");
           }}
         >
           <img style={{ width: 35.5, height: 30 }} src="/assets/web.png" />
           <p style={{ marginTop: 6 }} className={styles.bit}>
-            Work
+            Pickleball
+          </p>
+        </div>
+        <div
+          style={{
+            width: 60,
+            height: 60,
+            marginTop: 40,
+            marginRight: 40,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            window.open("https://withmessaging.com");
+          }}
+        >
+          <img style={{ width: 35.5, height: 30 }} src="/assets/web.png" />
+          <p style={{ marginTop: 6 }} className={styles.bit}>
+            With
+          </p>
+        </div>
+        <div
+          style={{
+            width: 60,
+            height: 60,
+            marginTop: 40,
+            marginRight: 40,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            setBlaster(true);
+          }}
+        >
+          <img style={{ width: 35.5, height: 30 }} src="/assets/blaster.png" />
+          <p style={{ marginTop: 6 }} className={styles.bit}>
+            Blaster
           </p>
         </div>
       </div>
@@ -80,6 +124,7 @@ export default function Home() {
         </div>
       </div>
       {show && <Popup onClose={() => setShow(false)} />}
+      {blaster && <Blaster onClose={() => setBlaster(false)} />}
     </div>
   );
 }
